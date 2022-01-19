@@ -1,0 +1,24 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Batman the Dark Knight",
+      "alterego": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Spiderman",
+      "alterego": "Peter Parker"
+    },
+    {
+      "id": 3,
+      "name": "Iron Man 7",
+      "alterego": "Tony Stark"
+    },
+    {
+      "id": 4,
+      "name": "Doctor Strange",
+      "alterego": "Stephen Strange"
+    }
+  ]
+}
