@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useSuperHeroesData from "../hooks/useSuperHeroesData";
 
 const RQSuperHeroesPage = () => {
@@ -18,8 +19,13 @@ const RQSuperHeroesPage = () => {
     <div>
       <h2>HQ Super Heroes Page</h2>
       <button onClick={refetch}>Fetch Heroes</button>
-      {data.map((heroNames) => (
+      {/* {data.map((heroNames) => (
         <div key={heroNames}>{heroNames}</div>
+      ))} */}
+      {data.data.map((heroNames) => (
+        <div key={heroNames.id}>
+          <Link to={`/rq-super-heroes/${heroNames.id}`}>{heroNames.name}</Link>
+        </div>
       ))}
     </div>
   );
